@@ -1,0 +1,496 @@
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+}
+/* Sección HOME */
+
+/* NAV */
+
+nav{
+    background-color:#fff;
+}
+
+nav .nav__logo{
+    background-color: rgb(0, 31, 108);
+    color: #fff;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:30px;
+    font-weight: bold;
+    border: 1px solid;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+nav .nav__li{
+    margin-right: 15px;
+}
+
+
+.nav__li .nav__a{
+    color: #000;
+    font-size: 20px;
+    font-family: "Verdana", Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    transition: 200ms;
+}
+
+.nav__li .nav__a:hover{
+    border-radius: 40px;
+    padding: 20px;
+    color: #fff;
+    background-color: #000;
+}
+
+
+
+.fondo-portada{
+    width: 100%;
+    height: 550px;
+    position: relative;
+    background-image: url('../img/1535729470-portada-computacin-1200x519.jpeg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    animation: movimiento 20s infinite linear alternate;
+}
+
+
+
+@keyframes movimiento{
+    from{
+        background-position: bottom left;
+
+    }
+    to{
+            background-position: top right;
+        }
+}
+
+@media (max-width:1288px) and (min-width:576px){
+
+    .imagen_entre_texto{
+        height:100%;
+    }
+}
+
+
+
+.fondo-portada__gradient{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* background: -webkit-linear-gradient(left, black, #0672d0); */
+    opacity: 0.5;
+}
+
+.fondo-portada__detalles{
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+    margin:auto;
+}
+
+.fondo-portada__textos-detalles{
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    max-width: 600px;
+    padding-top: 100px;
+    position: relative;
+    color: #fff;
+}
+
+.fondo-portada__textos-detalles h3{
+    font-size: 50px;
+    width: 550px;
+    font-weight: bold;
+}
+
+.fondo-portada__textos-detalles p{
+    font-size: 30px;
+}
+
+.fondo-portada__textos-detalles button{
+    font-family: 'Raleway', sans-serif;
+    padding: 10px;
+    background: none;
+    border-style: none;
+    border: 1px solid white;
+    color: #fff;
+    margin-top: 10px;
+    transition: 500ms;
+}
+
+.boton2{
+    margin-left: 20px;
+}
+
+.fondo-portada__textos-detalles button:hover{
+    background: #fff;
+    color: #000;
+
+}
+
+.section-2{
+    background-color: #69d5ff;
+    /* height: 80vh; */
+    padding-bottom: 150px;
+}
+
+.imagen_entre_texto{
+    width: 350px;
+}
+
+.texto-entre-imagen{
+    line-height: 30px;
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+    font-weight:100;
+}
+
+.img-programing{
+    width: 500px;
+}
+
+.texto3{
+    line-height: 30px;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight:100;
+}
+
+
+.carousel-inner img{
+    border-radius:10px;
+}
+
+.imagen-contacto-index{
+    background: url('../img/pexels-dana-tentis-370799.jpg') no-repeat fixed;
+    padding-bottom: 20%;
+    padding-top: 50px;
+    position: relative;
+}
+
+/* Sección Nosotros */
+
+
+.videoNosotros{
+    width: 100%;
+    height: 550px;
+    position: relative;
+    overflow: hidden;
+}
+
+.videoNosotros__videoUno{
+    width: 100%;
+}
+
+.videoNosotros__absoluteTexto{
+    position: absolute;
+    width: 800px;
+    height: 500px;
+}
+
+.videoNosotros__absoluteTexto p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+}
+
+.videoNosotros__capaNosotros{
+    width: 100%;
+    height: 550px;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.274);
+}
+
+
+
+.degradee{
+    background-image: linear-gradient(115deg, #ffffff 0, #ffffff 8.33%, #ffffff 16.67%, #ffffff 25%, #ffffff 33.33%, #ffffff 41.67%, #f9f9f6 50%, #eaece0 58.33%, #dae1ce 66.67%, #c9d8be 75%, #b8d0b2 83.33%, #a6c9aa 91.67%, #95c4a4 100%);
+}
+
+.degradee__img-nosotros{
+    width: 100%;
+}
+
+.degradee__parrafo-nosotros{
+    font-family: 'Raleway', sans-serif;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight:100;
+}
+
+.section-2-nosotros{
+    background-color: rgb(96, 43, 107);
+}
+
+.titulo-conocimiento{
+    font-family: 'Raleway', sans-serif;
+    line-height: 30px;
+    font-size: 40px;
+    font-weight:100;
+}
+
+.img-js{
+    width: 500px;
+}
+
+.parrafo-js{
+    font-family: 'Raleway', sans-serif;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight:100;
+}
+
+.numero{
+    font-family: 'Raleway', sans-serif;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight:100;
+}
+
+.img-numero{
+    width: 200px;
+}
+
+
+/* Seccion SERVICIOS */
+
+
+.trasfondo{
+    background: url('../img/topicos-avanzados-programacion-curso-gratuito-academica-1.jpeg') no-repeat fixed 100%;
+}
+
+.trasfondo__textos{
+    padding-top: 10%;
+    padding-bottom: 10%;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+.trasfondo__servicios{
+    margin-left: 150px;
+}
+
+.trasfondo__textos button{
+    font-family: 'Raleway', sans-serif;
+    padding: 10px;
+    background: none;
+    border-style: none;
+    border: 1px solid white;
+    color: #fff;
+    margin-top: 10px;
+    transition: 500ms;
+}
+
+
+.trasfondo__textos button:hover{
+    background: #000;
+    color: #fff;
+}
+
+.box-imagen-servicios{
+    background: url('../img/pexels-mudassir-ali-2680270.jpg') no-repeat fixed 100%;
+}
+
+.padding-imagen{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-left: 0;
+}
+
+.box-bordes{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border: solid 1px white;
+    border-radius: 10px;
+    padding: 30px;
+    margin-left: 25px;
+    width: 300px;
+    transition: all 0.5s;
+}
+
+
+.box-bordes:hover{
+    transform: scale(1.05, 1.05);
+    cursor: pointer;
+}
+
+.box-bordes p{
+    font-family: 'Raleway', sans-serif;
+}
+
+
+
+.box-imagen-2{
+    background: url('../img/pexels-steve-johnson-1484759.jpg') repeat fixed;
+    padding-bottom: 10%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bordes-dos{
+    border: solid 1px black;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    transition: all 0.5s;
+}
+
+.box-imagen-2 h2{
+    letter-spacing: 5px;
+}
+
+.box-imagen-2 p{
+    font-size: 20px;
+}
+
+.bordes-dos:hover{
+    transform: scale(1.05, 1.05);
+    cursor: pointer;
+}
+
+
+/* Seccion CONTACTO */
+
+
+.imagen-contacto{
+    background: url('../img/pexels-elina-krima-3377405.jpg') no-repeat fixed;
+    padding-bottom: 20%;
+    padding-top: 50px;
+    position: relative;
+}
+
+.imagen-contacto input{
+    border-radius: 10px;
+    border: 0;
+}
+
+.imagen-contacto__color-contacto{
+    position: absolute;
+    color: rgba(0, 0, 0, 0.315);
+    width: 100%;
+    height: 100%
+}
+
+.texto-contacto{
+    font-family: 'Raleway', sans-serif;
+}
+
+
+.imagen-contacto h2{
+    font-family: 'Raleway', sans-serif;
+}
+
+textarea{
+    border-radius: 10px;
+}
+
+.boton-enviar{
+    border-radius: 10px;
+    background: none;
+    transition: background 0.5s;
+}
+
+.boton-enviar:hover{
+    background: rgba(236, 236, 236, 0.904);
+    transform: scale(1.05, 1.05);
+}
+
+
+/* Sección PORTAFOLIO */
+
+.imagen-portafolio{
+    background: url('../img/pexels-pixabay-268415.jpg');
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.div-portafolio{
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.div-portafolio h1{
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Footer */
+
+footer{
+    background:linear-gradient(90deg, #fff);
+    color: #000;
+    padding: 2rem 0;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    /* width: 100%; */
+}
+
+.imgFooter{
+    width: 500px;
+}
+
+label{
+    color: #6B49F6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+form{
+    border-radius: 20px;
+}
+
+fieldset{
+    border-radius: 10px;
+    padding: 40px;
+}
+
+legend{
+    font-size: 30px;
+    color: #6B49F6;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.field{
+    padding: 10px;
+    width: 300px;
+    text-align: left;
+}
+
+.fieldCorreo{
+    padding: 10px;
+    width: 312px;
+    text-align: left;
+}
+
+.textoMensaje{
+    text-align: center;
+    color: #6B49F6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.fieldMensaje{
+    padding: 10px;
+    width: 374px;
+    font-weight: bold;
+}
+
+.btnn{
+    background-color: #CFF6FF;
+    border: none;
+    border-radius: 10px;
+    padding: 18px;
+    color: #6B49F6 ;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+
+.btnn:hover{
+    background-color: #31E6EC;
+    transition: 0.5s;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05, 1.05);
+
+}

@@ -1,0 +1,88 @@
+// Variables
+$color-degradee: linear-gradient(115deg, #ffffff 0, #ffffff 8.33%, #ffffff 16.67%, #ffffff 25%, #ffffff 33.33%, #ffffff 41.67%, #f9f9f6 50%, #eaece0 58.33%, #dae1ce 66.67%, #c9d8be 75%, #b8d0b2 83.33%, #a6c9aa 91.67%, #95c4a4 100%);
+
+
+// Mixin
+@mixin size($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+
+// SECCIÓN NOSOTROS
+
+.videoNosotros{
+    @include size(100%, 550px);
+    position: relative;
+    overflow: hidden;
+
+    .videoNosotros__videoUno{
+        width: 100%;
+    }
+
+    .videoNosotros__absoluteTexto{
+        position: absolute;
+        @include size(800px, 500px);
+
+        p{
+            font-family: 'Raleway', sans-serif;
+            font-size: 30px;
+        }
+    }
+
+    .videoNosotros__capaNosotros{
+        @include size(100%, 550px);
+        position: absolute;
+        background: rgba(0, 0, 0, 0.274);
+    }
+}
+
+
+.degradee{
+    background-image: $color-degradee;
+
+    .degradee__img-nosotros{
+        width: 100%;
+    }
+
+    .degradee__parrafo-nosotros{
+        font-family: 'Raleway', sans-serif;
+        line-height: 30px;
+        font-size: 20px;
+        font-weight:100;
+    }
+}
+
+
+.section-2-nosotros{
+    background-color: rgb(96, 43, 107);
+}
+
+.titulo-conocimiento{
+    font-family: 'Raleway', sans-serif;
+    line-height: 30px;
+    font-size: 40px;
+    font-weight:100;
+}
+
+.img-js{
+    width: 500px;
+}
+
+.parrafo-js{
+    font-family: 'Raleway', sans-serif;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight:100;
+}
+
+.numero{
+    font-family: 'Raleway', sans-serif;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight:100;
+}
+
+.img-numero{
+    width: 200px;
+}

@@ -1,0 +1,39 @@
+// Variables
+$color-blanco: #fff;
+$color-negro: #000;
+$azul-logo: rgb(0, 31, 108);
+$fuente-verdana: "Verdana", Geneva, Tahoma, sans-serif;
+
+
+nav{
+    background-color:$color-blanco;
+    .nav__logo{
+        background-color: $azul-logo;
+        color: $color-blanco;
+        font-family: $fuente-verdana;
+        font-size:30px;
+        font-weight: bold;
+        border: 1px solid;
+        border-radius: 30px;
+        padding: 10px;
+    }
+    .nav__li{
+        margin-right: 0px;
+
+        .nav__a{
+            color: $color-negro;
+            font-size: 18px;
+            padding: 10px 10px 10px 10px;
+            font-family: $fuente-verdana;
+            text-decoration: none;
+            transition: border-radius 100ms;
+        }
+        .nav__a:hover{
+            border-radius: 40px;
+            padding: 10px 10px 10px 10px;
+            color: $color-blanco;
+            background-color: $color-negro;
+            transition: 100ms;
+        }
+    }
+}

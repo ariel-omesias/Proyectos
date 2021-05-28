@@ -1,0 +1,155 @@
+// INDEX SECCIÓN HOME
+@import "nav";
+@import "fondoportada";
+
+.section-2{
+    background-color: #69d5ff;
+    padding-bottom: 150px;
+}
+
+.imagen_entre_texto{
+    width: 350px;
+}
+
+.texto-entre-imagen{
+    line-height: 30px;
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+    font-weight:100;
+}
+
+.img-programing{
+    width: 500px;
+}
+
+.texto3{
+    line-height: 30px;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight:100;
+}
+
+
+.carousel-inner {
+    img{
+        border-radius:10px;
+    }
+}
+
+.imagen-contacto-index{
+    background: url('../assets/img/pexels-dana-tentis-370799.jpg') no-repeat fixed;
+    padding-bottom: 20%;
+    padding-top: 50px;
+    position: relative;
+}
+
+// SECCIÓN NOSOTROS
+
+@import "nosotros";
+
+// SECCIÓN SERVICIOS
+
+@import "servicios";
+
+// SECCIÓN CONTACTO
+
+@import "contacto";
+
+/* Sección PORTAFOLIO */
+
+.imagen-portafolio{
+    background: url('../assets/img/pexels-pixabay-268415.jpg');
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.div-portafolio{
+    padding-top: 10%;
+    padding-bottom: 10%;
+
+    h1{
+        font-family: 'Raleway', sans-serif;
+    }
+}
+
+
+/* Footer */
+
+footer{
+    background:linear-gradient(90deg, #fff);
+    color: #000;
+    padding: 2rem 0;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    /* width: 100%; */
+}
+
+.imgFooter{
+    width: 500px;
+}
+
+label{
+    color: #6B49F6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+form{
+    border-radius: 20px;
+}
+
+fieldset{
+    border-radius: 10px;
+    padding: 40px;
+}
+
+legend{
+    font-size: 30px;
+    color: #6B49F6;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.field{
+    padding: 10px;
+    width: 300px;
+    text-align: left;
+}
+
+.fieldCorreo{
+    padding: 10px;
+    width: 312px;
+    text-align: left;
+}
+
+.textoMensaje{
+    text-align: center;
+    color: #6B49F6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.fieldMensaje{
+    padding: 10px;
+    width: 374px;
+    font-weight: bold;
+}
+
+.btnn{
+    background-color: #CFF6FF;
+    border: none;
+    border-radius: 10px;
+    padding: 18px;
+    color: #6B49F6 ;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+
+.btnn:hover{
+    background-color: #31E6EC;
+    transition: 0.5s;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05, 1.05);
+
+}

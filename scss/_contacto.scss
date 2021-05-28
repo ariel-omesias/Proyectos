@@ -1,0 +1,49 @@
+// Mixin
+@mixin size($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+
+.imagen-contacto{
+    background: url('../assets/img/pexels-elina-krima-3377405.jpg') no-repeat fixed;
+    padding-bottom: 20%;
+    padding-top: 50px;
+    position: relative;
+
+    input{
+        border-radius: 10px;
+        border: 0;
+    }
+
+    .imagen-contacto__color-contacto{
+        position: absolute;
+        color: rgba(0, 0, 0, 0.315);
+        @include size(100%, 100%);
+    }
+
+    h2{
+        font-family: 'Raleway', sans-serif;
+    }
+    
+}
+
+
+.texto-contacto{
+    font-family: 'Raleway', sans-serif;
+}
+
+textarea{
+    border-radius: 10px;
+}
+
+.boton-enviar{
+    border-radius: 10px;
+    background: none;
+    transition: background 0.5s;
+}
+
+.boton-enviar:hover{
+    background: rgba(236, 236, 236, 0.904);
+    transform: scale(1.05, 1.05);
+}

@@ -1,0 +1,170 @@
+// Variables
+$color-blanco: #fff;
+$color-negro: #000;
+$fuente-raleway: 'Raleway', sans-serif;
+$fuente-verdana: "Verdana", Geneva, Tahoma, sans-serif;
+$azul-logo: rgb(0, 31, 108);
+
+
+.trasfondo{
+    background: url('../assets/img/topicos-avanzados-programacion-curso-gratuito-academica-1.jpeg') no-repeat fixed 100%;
+}
+
+.trasfondo__textos{
+    padding-top: 10%;
+    padding-bottom: 10%;
+    font-family: $fuente-raleway;
+    .trasfondo__parrafo{
+        font-family: $fuente-verdana;
+        font-size: 25px;
+        color: $color-blanco;
+    }
+}
+
+
+.trasfondo__servicios{
+    margin-left: 150px;
+}
+
+.trasfondo__textos button{
+    font-family: $fuente-raleway;
+    padding: 10px;
+    background: none;
+    border-style: none;
+    border: 1px solid $color-blanco;
+    color: $color-blanco;
+    margin-top: 10px;
+    transition: 500ms;
+
+    a{
+        text-decoration: none;
+        border-style: none;
+        background: none;
+        font-weight: bold;
+        color: $color-blanco;
+    }
+}
+
+
+.trasfondo__textos button:hover{
+    background-color: $color-negro;
+    cursor: pointer;
+}
+
+.box-imagen-servicios{
+    background: url('../assets/img/pexels-mudassir-ali-2680270.jpg') no-repeat fixed 100%;
+}
+
+.padding-imagen{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-left: 0;
+}
+
+.box-bordes{
+    font-family: $fuente-verdana;
+    border: solid 1px $color-blanco;
+    border-radius: 10px;
+    padding: 30px;
+    margin-left: 25px;
+    width: 300px;
+    transition: all 0.5s;
+}
+
+
+.box-bordes:hover{
+    transform: scale(1.05, 1.05);
+    cursor: pointer;
+}
+
+.box-bordes p{
+    font-family: $fuente-raleway;
+}
+
+
+
+.box-imagen-2{
+    background: url('../assets/img/pexels-steve-johnson-1484759.jpg') repeat fixed;
+    padding-bottom: 10%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bordes-dos{
+    border: solid 1px black;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    transition: all 0.5s;
+}
+
+.box-imagen-2 h2{
+    letter-spacing: 5px;
+}
+
+.box-imagen-2 p{
+    font-size: 20px;
+}
+
+.bordes-dos:hover{
+    transform: scale(1.05, 1.05);
+    cursor: pointer;
+}
+
+.descripcion{
+    position: relative;
+    background-color: rgb(247, 247, 247);
+    height: 80vh;
+    max-width: 100%;
+    font-family: $fuente-verdana;
+
+
+    h2{
+        color: $color-negro;
+        font-size: 45px;
+        font-weight: bold;
+        letter-spacing: 5px;
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 100px;
+    }
+
+}
+
+.descripcion__precios{
+    div{
+        font-size: 20px;
+        border: solid 1px black;
+        border-radius: 10px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        transition: all 0.5s;
+    }
+
+    h3{
+        letter-spacing:4px;
+    }
+
+    div:hover{
+        transform: scale(1.05, 1.05);
+        cursor: pointer;
+    }
+}
+
+footer{
+
+    h3{
+      font-size: 60px;
+      font-family: $fuente-raleway;  
+    }
+    .footer__p{
+        font-size: 30px;
+        font-family: $fuente-raleway;  
+    }
+}
+
+
+
+
+
+
+

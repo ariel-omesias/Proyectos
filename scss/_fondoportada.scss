@@ -1,0 +1,116 @@
+// Variables
+$color-blanco: #fff;
+$color-negro: #000;
+
+// Mixin
+@mixin size($width, $height){
+    height: $height;
+    width: $width;
+}
+
+
+
+
+.fondo-portada{
+    @include size(100%, 550px);
+    position: relative;
+    background-image: url('../assets/img/1535729470-portada-computacin-1200x519.jpeg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    animation: movimiento 20s infinite linear alternate;
+
+    .fondo-portada__gradient{
+        @include size(100%, 100%);
+        position: absolute;
+        opacity: 0.5;
+    }
+
+    .fondo-portada__detalles{
+        width: 100%;
+        max-width: 1200px;
+        position: relative;
+        margin:auto;
+
+        .fondo-portada__textos-detalles{
+            font-family: 'Raleway', sans-serif;
+            width: 100%;
+            max-width: 600px;
+            padding-top: 100px;
+            position: relative;
+            color: $color-blanco;
+            h3{
+                font-size: 50px;
+                width: 550px;
+                font-weight: bold;
+            }
+            p{
+                font-size: 30px;
+            }
+
+            button{
+                font-family: 'Raleway', sans-serif;
+                padding: 10px;
+                background: none;
+                border-style: none;
+                border: 1px solid $color-blanco;
+                color: $color-blanco;
+                margin-top: 10px;
+                transition: 500ms;
+            }
+
+            .textos-detalles__a{
+                text-decoration: none;
+                border-style: none;
+                background: none;
+                font-weight: bold;
+                color: $color-blanco;
+            }
+
+            .boton2{
+                font-family: 'Raleway', sans-serif;
+                padding: 10px;
+                background: none;
+                border-style: none;
+                border: 1px solid $color-blanco;
+                color: $color-blanco;
+                margin-top: 10px;
+                transition: 500ms;
+            }
+
+            button:hover{
+                background-color: $color-negro;
+                cursor: pointer;
+            }
+
+            .boton2:hover{
+                background-color: $color-negro;
+                cursor: pointer;
+            }
+
+        }
+    }
+    
+}
+
+
+@keyframes movimiento{
+    from{
+        background-position: bottom left;
+
+    }
+    to{
+            background-position: top right;
+        }
+}
+
+@media (max-width:1288px) and (min-width:576px){
+
+    .imagen_entre_texto{
+        height:100%;
+    }
+}
+
+
+.boton2{
+    margin-left: 20px;
+}
