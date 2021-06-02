@@ -11,11 +11,15 @@ nav {
     border-radius: 30px;
     padding: 10px; }
   nav .nav__li {
-    margin-right: 0px; }
+    margin-right: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px; }
     nav .nav__li .nav__a {
       color: #000;
       font-size: 18px;
       padding: 10px 10px 10px 10px;
+      margin-top: 20px;
+      margin-bottom: 20px;
       font-family: "Verdana", Geneva, Tahoma, sans-serif;
       text-decoration: none;
       transition: border-radius 100ms; }

@@ -19,11 +19,15 @@ nav{
     }
     .nav__li{
         margin-right: 0px;
+        margin-top: 10px;
+        margin-bottom: 10px;
 
         .nav__a{
             color: $color-negro;
             font-size: 18px;
             padding: 10px 10px 10px 10px;
+            margin-top: 20px;
+            margin-bottom: 20px;
             font-family: $fuente-verdana;
             text-decoration: none;
             transition: border-radius 100ms;
