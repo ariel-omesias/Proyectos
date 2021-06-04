@@ -83,6 +83,14 @@ $azul-logo: rgb(0, 31, 108);
     background: url('../assets/img/pexels-steve-johnson-1484759.jpg') repeat fixed;
     padding-bottom: 10%;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    .box-imagen-2 h2{
+        letter-spacing: 5px;
+    }
+
+    .box-imagen-2 p{
+        font-size: 20px;
+    }
 }
 
 .bordes-dos{
@@ -93,13 +101,6 @@ $azul-logo: rgb(0, 31, 108);
     transition: all 0.5s;
 }
 
-.box-imagen-2 h2{
-    letter-spacing: 5px;
-}
-
-.box-imagen-2 p{
-    font-size: 20px;
-}
 
 .bordes-dos:hover{
     transform: scale(1.05, 1.05);

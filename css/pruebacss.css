@@ -253,6 +253,10 @@ nav {
   background: url("../assets/img/pexels-steve-johnson-1484759.jpg") repeat fixed;
   padding-bottom: 10%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+  .box-imagen-2 .box-imagen-2 h2 {
+    letter-spacing: 5px; }
+  .box-imagen-2 .box-imagen-2 p {
+    font-size: 20px; }
 
 .bordes-dos {
   border: solid 1px black;
@@ -260,12 +264,6 @@ nav {
   margin-top: 15px;
   margin-bottom: 15px;
   transition: all 0.5s; }
-
-.box-imagen-2 h2 {
-  letter-spacing: 5px; }
-
-.box-imagen-2 p {
-  font-size: 20px; }
 
 .bordes-dos:hover {
   transform: scale(1.05, 1.05);
