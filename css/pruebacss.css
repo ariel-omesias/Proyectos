@@ -112,25 +112,38 @@ nav {
   padding-top: 50px;
   position: relative; }
 
-.videoNosotros {
+.baner-nosotros {
+  background-image: url(../assets/img/baner-nosotros.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 100%;
-  height: 550px;
-  position: relative;
-  overflow: hidden; }
-  .videoNosotros .videoNosotros__videoUno {
-    width: 100%; }
-  .videoNosotros .videoNosotros__absoluteTexto {
-    position: absolute;
-    width: 800px;
-    height: 500px; }
-    .videoNosotros .videoNosotros__absoluteTexto p {
-      font-family: 'Raleway', sans-serif;
-      font-size: 30px; }
-  .videoNosotros .videoNosotros__capaNosotros {
-    width: 100%;
-    height: 550px;
-    position: absolute;
-    background: rgba(0, 0, 0, 0.274); }
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative; }
+  .baner-nosotros h2, .baner-nosotros h3, .baner-nosotros p {
+    color: #fff;
+    position: relative;
+    font-family: 'Raleway', sans-serif; }
+  .baner-nosotros h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px; }
+  .baner-nosotros h3 {
+    font-size: 30px; }
+  .baner-nosotros p {
+    font-size: 20px;
+    padding-top: 20px; }
+
+.baner-nosotros::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #020067;
+  opacity: 0.7;
+  position: absolute; }
 
 .degradee {
   background-image: linear-gradient(115deg, #ffffff 0, #ffffff 8.33%, #ffffff 16.67%, #ffffff 25%, #ffffff 33.33%, #ffffff 41.67%, #f9f9f6 50%, #eaece0 58.33%, #dae1ce 66.67%, #c9d8be 75%, #b8d0b2 83.33%, #a6c9aa 91.67%, #95c4a4 100%); }
