@@ -9,14 +9,15 @@ $color-degradee: linear-gradient(115deg, #ffffff 0, #ffffff 8.33%, #ffffff 16.67
 }
 
 
-// SECCIÓN NOSOTROS
+// SECCIÓN NOSOTROS PRINCIPAL
 
 .baner-nosotros{
     background-image: url(../assets/img/baner-nosotros.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 500px;
+    height: 550px;
+    text-align: center;
 
     display: flex;
     flex-direction: column;
@@ -57,11 +58,43 @@ $color-degradee: linear-gradient(115deg, #ffffff 0, #ffffff 8.33%, #ffffff 16.67
     position: absolute;
 }
 
+
+
+@media only screen and (max-width: 550px){
+    .baner-nosotros{
+        text-align: center;
+    
+        h2, h3, p{
+            color: #fff;
+            position: relative;
+            font-family: 'Raleway', sans-serif;
+        }
+        h2{
+            font-size: 25px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+    
+        h3{
+            font-size:20px;
+        }
+    
+        p{
+            font-size: 15px;
+            padding-top: 20px;
+        }
+    
+    }
+}
+
+
+// Segunda seccion nosotros
 .degradee{
     background-image: $color-degradee;
 
     .degradee__img-nosotros{
         width: 100%;
+        border-radius: 30px;
     }
 
     .degradee__parrafo-nosotros{
@@ -72,6 +105,29 @@ $color-degradee: linear-gradient(115deg, #ffffff 0, #ffffff 8.33%, #ffffff 16.67
     }
 }
 
+@media only screen and (max-width: 550px){
+    .degradee{
+        h1{
+            font-size: 20px;
+        }
+    
+        .degradee__img-nosotros{
+            width: 100%;
+            border-radius: 30px;
+        }
+    
+        .degradee__parrafo-nosotros{
+            font-family: 'Raleway', sans-serif;
+            line-height: 30px;
+            font-size: 15px;
+            font-weight:100;
+            text-align: center;
+        }
+    }
+}
+
+
+// Tercera secion de nosotros
 
 .section-2-nosotros{
     background-color: rgb(96, 43, 107);
@@ -82,6 +138,7 @@ $color-degradee: linear-gradient(115deg, #ffffff 0, #ffffff 8.33%, #ffffff 16.67
     line-height: 30px;
     font-size: 40px;
     font-weight:100;
+    text-align: center;
 }
 
 .img-js{
@@ -93,6 +150,7 @@ $color-degradee: linear-gradient(115deg, #ffffff 0, #ffffff 8.33%, #ffffff 16.67
     line-height: 30px;
     font-size: 20px;
     font-weight:100;
+    text-align: center;
 }
 
 .numero{
@@ -104,4 +162,25 @@ $color-degradee: linear-gradient(115deg, #ffffff 0, #ffffff 8.33%, #ffffff 16.67
 
 .img-numero{
     width: 200px;
+}
+
+@media only screen and (max-width: 550px){
+    .titulo-conocimiento{
+        font-family: 'Raleway', sans-serif;
+        line-height: 30px;
+        font-size: 30px;
+        font-weight:100;
+    }
+    .img-numero{
+        width: 100px;
+    }
+    .section-2-nosotros{
+        .parrafo-js{
+            font-family: 'Raleway', sans-serif;
+            line-height: 30px;
+            font-size: 15px;
+            font-weight:100;
+            text-align: center;
+        }
+    }
 }

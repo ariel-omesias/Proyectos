@@ -24,11 +24,11 @@
 </head>
 <body>
     <!-- Nav de Servicios -->
-  <nav class="navbar navbar-expand-lg py-4">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light py-4" id="hashPageServicios">
     <div class="container">
-        <a class="navbar-brand nav__logo" href="index.html"> < macro-web />  </a>
-        <button class="navbar-toggler bg-dark" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <a class="navbar-brand nav__logo text-white" href="index.html"> < macro-web />  </a>
+        <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon navbar-dark"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto nav__ul">
@@ -53,20 +53,15 @@
 </nav>
     <!-- Banner principal de sección servicios -->
     <section class="container-fluid trasfondo">
-      <div class="row trasfondo__textos">
-          <h1 class="col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center align-items-center justify-content-center py-5 text-white display-4 font-weight-bold">Nuestros Servicios de Diseño Web</h1> <!--h1 de seccion servicios-->
-          <p class="trasfondo__parrafo col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center align-items-center justify-content-center font-weight-bold">Completamente adaptable para cualquier dispositivo móvil. FULL RESPONSIVE</p>
-
-            <div class="row container trasfondo__servicios justify-content-center align-items-center">
-                <button class="text-center text-white "><a href="servicios.html#hashServicios">
-                    Diseño Web.</a>
-                </button>
-                <button class="text-center text-white boton-servicios ml-5"><a href="servicios.html#hashServicios">
-                    Marketing Digital.</a>
-                </button>
-            </div>
-        </div>
+      <h1>Nuestros Servicios de Diseño Web</h1> <!--h1 de seccion servicios-->
+      <p>Completamente adaptable para cualquier dispositivo móvil</p>
+      <p class="font-weight-bold">RESPONSIVE</p>
+      <div class="trasfondo__servicios">
+        <button><a href="servicios.html#hashServicios">Diseño Web.</a></button>
+        <button><a href="servicios.html#hashMkt">Marketing Digital.</a></button>
+      </div>
   </section>
+
     <!-- Sección donde se describen las características del servicio, mostrando 3 box -->
   <section id="hashServicios" class="container-fluid text-white sectionServicios pb-5 box-imagen-servicios ml-0">
       <section class="container-fluid padding-imagen">
@@ -106,7 +101,7 @@
 
     <!-- Descripción de precios sobre diseño web -->
   <section class="container-fluid box-imagen-2">
-      <h2 class="text-center text-dark display-4 font-weight-bold py-5">PRECIOS DISEÑO WEB</h2>
+      <h2 class="text-center text-dark font-weight-bold py-5">PRECIOS DISEÑO WEB</h2>
       <div class="row imagen-2 justify-content-center">
 
         <div class="col-sm-12 col-md-6 col-lg-3 bordes-dos mx-4 py-4 px-3">
@@ -134,9 +129,9 @@
 
     <!-- Sección de precios para Marketing Digital -->
 
-  <section class="container-fluid descripcion">
+  <section class="container-fluid descripcion" id="hashMkt">
 
-      <h2 class="text-center text-dark display-4 font-weight-bold py-5">PRECIOS MARKETING DIGITAL!</h2>
+      <h2 class="text-center text-white font-weight-bold py-5">PRECIOS MARKETING DIGITAL!</h2>
       <div class="row justify-content-center descripcion__precios">
         <div class="col-sm-12 col-md-6 col-lg-3 mx-4 py-4 px-3 text-center">
           <h3 class=" py-4" >Plan Emprendedor</h3>

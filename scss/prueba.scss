@@ -7,6 +7,15 @@
     padding-bottom: 150px;
 }
 
+@media only screen and (max-width: 550px){
+    .section-2{
+        p{
+            font-size: 20px;
+            text-align: center;
+        }
+    }
+}
+
 .imagen_entre_texto{
     width: 70%;
 }
@@ -30,7 +39,7 @@
 }
 
 .text-info{
-    font-size: 40px;
+    font-size: 30px;
 }
 
 
@@ -41,11 +50,24 @@
     }
 }
 
+
 .imagen-contacto-index{
     background: url('../assets/img/pexels-dana-tentis-370799.jpg') no-repeat fixed;
     padding-bottom: 20%;
     padding-top: 50px;
     position: relative;
+
+    p{
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width:550px){
+    .imagen-contacto-index{
+        p{
+            font-size: 25px;
+        }
+    }
 }
 
 // SECCIÓN NOSOTROS

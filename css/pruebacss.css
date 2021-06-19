@@ -35,7 +35,8 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 750px;
+  height: 600px;
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -51,18 +52,23 @@ nav {
   .portada h1 {
     padding-bottom: 30px;
     width: 70%;
-    font-size: 35px; }
+    font-size: 35px;
+    bottom: 30px; }
+  .portada a {
+    text-decoration: none;
+    color: #fff; }
   .portada .portada__botones {
     width: 50%; }
   .portada button {
     color: #fff;
+    border-style: none;
     border-radius: 10px;
     text-decoration: none;
-    background: none;
-    border: solid 1px black;
+    background-color: #001f6c;
     padding: 8px;
     margin-top: 15px;
-    transition: all 0.5s; }
+    transition: all 0.2s;
+    top: 30px; }
   .portada button:hover {
     background-color: #000;
     color: #fff; }
@@ -77,9 +83,36 @@ nav {
   opacity: 0.7;
   position: absolute; }
 
+@media only screen and (max-width: 600px) {
+  .portada {
+    width: 100%;
+    height: 750px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative; }
+    .portada h2 {
+      width: 70%;
+      font-family: 'Raleway', sans-serif;
+      font-size: 20px; }
+    .portada h1 {
+      font-size: 25px; }
+    .portada button {
+      transition: all 0.5s;
+      top: 30px; }
+    .portada a {
+      font-size: 15px; } }
+
 .section-2 {
   background-color: #69d5ff;
   padding-bottom: 150px; }
+
+@media only screen and (max-width: 550px) {
+  .section-2 p {
+    font-size: 20px;
+    text-align: center; } }
 
 .imagen_entre_texto {
   width: 70%; }
@@ -100,7 +133,7 @@ nav {
   font-weight: 100; }
 
 .text-info {
-  font-size: 40px; }
+  font-size: 30px; }
 
 .carousel-inner img {
   border-radius: 10px;
@@ -111,13 +144,20 @@ nav {
   padding-bottom: 20%;
   padding-top: 50px;
   position: relative; }
+  .imagen-contacto-index p {
+    font-size: 40px; }
+
+@media only screen and (max-width: 550px) {
+  .imagen-contacto-index p {
+    font-size: 25px; } }
 
 .baner-nosotros {
   background-image: url(../assets/img/baner-nosotros.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 500px;
+  height: 550px;
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -145,15 +185,46 @@ nav {
   opacity: 0.7;
   position: absolute; }
 
+@media only screen and (max-width: 550px) {
+  .baner-nosotros {
+    text-align: center; }
+    .baner-nosotros h2, .baner-nosotros h3, .baner-nosotros p {
+      color: #fff;
+      position: relative;
+      font-family: 'Raleway', sans-serif; }
+    .baner-nosotros h2 {
+      font-size: 25px;
+      font-weight: bold;
+      margin-bottom: 20px; }
+    .baner-nosotros h3 {
+      font-size: 20px; }
+    .baner-nosotros p {
+      font-size: 15px;
+      padding-top: 20px; } }
+
 .degradee {
   background-image: linear-gradient(115deg, #ffffff 0, #ffffff 8.33%, #ffffff 16.67%, #ffffff 25%, #ffffff 33.33%, #ffffff 41.67%, #f9f9f6 50%, #eaece0 58.33%, #dae1ce 66.67%, #c9d8be 75%, #b8d0b2 83.33%, #a6c9aa 91.67%, #95c4a4 100%); }
   .degradee .degradee__img-nosotros {
-    width: 100%; }
+    width: 100%;
+    border-radius: 30px; }
   .degradee .degradee__parrafo-nosotros {
     font-family: 'Raleway', sans-serif;
     line-height: 30px;
     font-size: 20px;
     font-weight: 100; }
+
+@media only screen and (max-width: 550px) {
+  .degradee h1 {
+    font-size: 20px; }
+  .degradee .degradee__img-nosotros {
+    width: 100%;
+    border-radius: 30px; }
+  .degradee .degradee__parrafo-nosotros {
+    font-family: 'Raleway', sans-serif;
+    line-height: 30px;
+    font-size: 15px;
+    font-weight: 100;
+    text-align: center; } }
 
 .section-2-nosotros {
   background-color: #602b6b; }
@@ -162,7 +233,8 @@ nav {
   font-family: 'Raleway', sans-serif;
   line-height: 30px;
   font-size: 40px;
-  font-weight: 100; }
+  font-weight: 100;
+  text-align: center; }
 
 .img-js {
   width: 75%; }
@@ -171,7 +243,8 @@ nav {
   font-family: 'Raleway', sans-serif;
   line-height: 30px;
   font-size: 20px;
-  font-weight: 100; }
+  font-weight: 100;
+  text-align: center; }
 
 .numero {
   font-family: 'Raleway', sans-serif;
@@ -182,37 +255,94 @@ nav {
 .img-numero {
   width: 200px; }
 
+@media only screen and (max-width: 550px) {
+  .titulo-conocimiento {
+    font-family: 'Raleway', sans-serif;
+    line-height: 30px;
+    font-size: 30px;
+    font-weight: 100; }
+  .img-numero {
+    width: 100px; }
+  .section-2-nosotros .parrafo-js {
+    font-family: 'Raleway', sans-serif;
+    line-height: 30px;
+    font-size: 15px;
+    font-weight: 100;
+    text-align: center; } }
+
 .trasfondo {
-  background: url("../assets/img/topicos-avanzados-programacion-curso-gratuito-academica-1.jpeg") no-repeat fixed 100%; }
-
-.trasfondo__textos {
-  padding-top: 10%;
-  padding-bottom: 10%;
-  font-family: "Raleway", sans-serif; }
-  .trasfondo__textos .trasfondo__parrafo {
-    font-family: "Verdana", Geneva, Tahoma, sans-serif;
-    font-size: 25px;
-    color: #fff; }
-
-.trasfondo__textos button {
-  font-family: "Raleway", sans-serif;
-  padding: 10px;
-  background: none;
-  border-style: none;
-  border: 1px solid #fff;
-  color: #fff;
-  margin-top: 10px;
-  transition: 500ms; }
-  .trasfondo__textos button a {
+  background-image: url("../assets/img/meeting.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 550px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .trasfondo h1, .trasfondo p, .trasfondo button {
+    color: #fff;
+    position: relative; }
+  .trasfondo h1 {
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    bottom: 60px;
+    font-size: 50px; }
+  .trasfondo p {
+    font-family: "Raleway", sans-serif;
+    font-size: 30px;
+    bottom: 30px; }
+  .trasfondo button {
     text-decoration: none;
     border-style: none;
     background: none;
-    font-weight: bold;
+    color: #fff;
+    background-color: #001f6c;
+    padding: 8px;
+    border-radius: 10px;
+    transition: all 0.2s; }
+  .trasfondo a {
+    text-decoration: none;
+    color: #fff; }
+  .trasfondo button:hover {
+    background-color: #000; }
+  .trasfondo a:hover {
     color: #fff; }
 
-.trasfondo__textos button:hover {
-  background-color: #000;
-  cursor: pointer; }
+.trasfondo::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #2b2d2c;
+  opacity: .75;
+  position: absolute; }
+
+@media only screen and (max-width: 850px) {
+  .trasfondo {
+    width: 100%;
+    height: 600px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; } }
+
+@media only screen and (max-width: 550px) {
+  .trasfondo {
+    width: 100%;
+    height: 600px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .trasfondo h1 {
+      font-size: 20px; }
+    .trasfondo p {
+      font-size: 15px; } }
 
 .box-imagen-servicios {
   background: url("../assets/img/pexels-mudassir-ali-2680270.jpg") no-repeat fixed 100%; }
@@ -242,14 +372,29 @@ nav {
 .box-bordes p {
   font-family: "Raleway", sans-serif; }
 
+@media only screen and (max-width: 550px) {
+  .padding-imagen h2 {
+    font-size: 25px; }
+  .box-bordes {
+    font-family: "Verdana", Geneva, Tahoma, sans-serif;
+    border: solid 1px #fff;
+    border-radius: 10px;
+    padding: 30px;
+    margin-left: 25px;
+    width: 300px;
+    transition: all 0.5s; }
+    .box-bordes h2 {
+      font-size: 20px; } }
+
 .box-imagen-2 {
   background: url("../assets/img/pexels-steve-johnson-1484759.jpg") repeat fixed;
   padding-bottom: 10%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
   .box-imagen-2 .box-imagen-2 h2 {
-    letter-spacing: 5px; }
+    letter-spacing: 5px;
+    font-size: 30px; }
   .box-imagen-2 .box-imagen-2 p {
-    font-size: 20px; }
+    font-size: 25px; }
 
 .bordes-dos {
   border: solid 1px black;
@@ -257,19 +402,44 @@ nav {
   margin-top: 15px;
   margin-bottom: 15px;
   transition: all 0.5s; }
+  .bordes-dos p {
+    font-size: 20px; }
 
 .bordes-dos:hover {
   transform: scale(1.05, 1.05);
   cursor: pointer; }
 
+@media only screen and (max-width: 550px) {
+  .box-imagen-2 {
+    background: url("../assets/img/pexels-steve-johnson-1484759.jpg") repeat fixed;
+    padding-bottom: 10%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+    .box-imagen-2 .box-imagen-2 h2 {
+      letter-spacing: 5px; }
+    .box-imagen-2 .box-imagen-2 p {
+      font-size: 20px; }
+  .bordes-dos {
+    border: solid 1px black;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    transition: all 0.5s; }
+    .bordes-dos p {
+      font-size: 15px; }
+  .bordes-dos:hover {
+    transform: scale(1.05, 1.05);
+    cursor: pointer; } }
+
 .descripcion {
   position: relative;
-  background-color: #f7f7f7;
+  background-color: #16869a;
   max-width: 100%;
-  font-family: "Verdana", Geneva, Tahoma, sans-serif; }
+  font-family: "Verdana", Geneva, Tahoma, sans-serif;
+  color: #fff;
+  padding-bottom: 50px; }
   .descripcion h2 {
-    color: #000;
-    font-size: 35px;
+    color: #fff;
+    font-size: 30px;
     font-weight: bold;
     letter-spacing: 5px;
     text-align: center;
@@ -278,7 +448,7 @@ nav {
 
 .descripcion__precios div {
   font-size: 20px;
-  border: solid 1px black;
+  border: solid 1px white;
   border-radius: 10px;
   margin-top: 15px;
   margin-bottom: 15px;
@@ -291,13 +461,46 @@ nav {
   transform: scale(1.05, 1.05);
   cursor: pointer; }
 
+@media only screen and (max-width: 550px) {
+  .descripcion h2 {
+    color: #000;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 100px; }
+  .descripcion__precios div {
+    font-size: 20px;
+    border: solid 1px black;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    transition: all 0.5s; }
+  .descripcion__precios h3 {
+    letter-spacing: 2px;
+    font-size: 18px; }
+  .descripcion__precios p {
+    font-size: 15px; }
+  .descripcion__precios div:hover {
+    transform: scale(1.05, 1.05);
+    cursor: pointer; } }
+
 footer h3 {
-  font-size: 60px;
+  font-size: 40px;
   font-family: "Raleway", sans-serif; }
 
 footer .footer__p {
   font-size: 30px;
   font-family: "Raleway", sans-serif; }
+
+@media only screen and (max-width: 550px) {
+  footer h3 {
+    font-size: 30px;
+    font-family: "Raleway", sans-serif; }
+  footer .footer__p {
+    font-size: 20px;
+    font-family: "Raleway", sans-serif; } }
 
 .imagen-contacto {
   background: url("../assets/img/pexels-elina-krima-3377405.jpg") no-repeat fixed;
@@ -310,7 +513,7 @@ footer .footer__p {
   .imagen-contacto .imagen-contacto__color-contacto {
     position: absolute;
     color: rgba(0, 0, 0, 0.315); }
-  .imagen-contacto h2 {
+  .imagen-contacto h1 {
     font-family: 'Raleway', sans-serif; }
 
 .texto-contacto {
@@ -330,6 +533,15 @@ textarea {
 .boton-enviar:hover {
   background: rgba(236, 236, 236, 0.904);
   transform: scale(1.05, 1.05); }
+
+@media only screen and (max-width: 550px) {
+  .imagen-contacto h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    text-align: center; }
+  .imagen-contacto .texto-contacto {
+    font-size: 30px;
+    text-align: center; } }
 
 /* Sección PORTAFOLIO */
 .imagen-portafolio {
